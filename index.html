@@ -13,41 +13,44 @@
     />
   </head>
   <body>
-    <div class="container my-5 p-4 shadow-sm">
-      <h4>Add Product</h4>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <input
-            type="text"
-            id="product"
-            placeholder="Product Name"
-            class="form-control my-3 p-2 border-2"
-          />
+   <main>
+     <!-- input area -->
+      <div class="container my-5 p-4 shadow-sm">
+        <h4>Add Product</h4>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <input
+              type="text"
+              id="product"
+              placeholder="Product Name"
+              class="form-control my-3 p-2 border-2"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <input
+              type="number"
+              id="count"
+              placeholder="Product Count"
+              class="form-control my-3 p-2 border-2"
+              value="1"
+              min="1"
+              ;
+            />
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <input
-            type="number"
-            id="count"
-            placeholder="Product Count"
-            class="form-control my-3 p-2 border-2"
-            value="1"
-            min="1"
-            ;
-          />
+        <button id="adder" class="btn btn-secondary">Add Product</button>
+        <span class="badge rounded-3 bg-primary ms-3 shadow-sm" id="added" style="display: none;">Added</span>
+        <span class="badge rounded-3 bg-danger ms-3 shadow-sm" id="notAdded" style="display: none;">Check Product Nmae</span>
+      </div>
+     <!-- product show area -->
+      <div class="container mt-3 mb-5 shadow-sm px-4 py-5">
+        <h4 class="mb-5 fw-bold">Products</h4>
+        <div id="boxToShow">
+          <div class="row g-4">
+          </div>
         </div>
       </div>
-      <button id="adder" class="btn btn-secondary">Add Product</button>
-      <span class="badge rounded-3 bg-primary ms-3 shadow-sm" id="added" style="display: none;">Added</span>
-      <span class="badge rounded-3 bg-danger ms-3 shadow-sm" id="notAdded" style="display: none;">Check Product Nmae</span>
-    </div>
-
-    <div class="container mt-3 mb-5 shadow-sm px-4 py-5">
-      <h4 class="mb-5 fw-bold">Products</h4>
-      <div id="boxToShow">
-        <div class="row g-4">
-        </div>
-      </div>
-    </div>
+   </main>
     <script src="app.js"></script>
   </body>
 </html>
